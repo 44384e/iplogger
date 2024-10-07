@@ -67,6 +67,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/video.css">
     <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 </head>
 
 <body>
@@ -103,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <img class="current-user-picture-icon" src="channel-pictures/my-channel.jpg">
             </div>
         </header>
-
+<br><br><br><br><br><br>
 
     <div class="main-flex d-flex">
         <!--MAIN CONTENT-->
@@ -116,84 +124,140 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="channel-container">
                     <h1>'. $titulo .'</h1>
 
-                    <div class="channel-flex d-flex">
-                        <div class="channel-image d-flex">
-                            <img src="images/profile-channel-img.jpg" alt="User Profile Photo">
-
-                            <div class="channel-name d-flex">
-                                <p>The Odin Project</p>
-                                <div class="subscribe-channel d-flex">
-                                    <button>
-                                        <div class="d-flex">
-                                            <i class="fab fa-youtube"></i>Subscribe
-                                        </div>
-                                    </button>
-                                    <p>799</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="views-flex d-flex">
-                            <p class="nbr-views">50,016 views</p>
-                        </div>
-                    </div>
+<div class="VideoInfo__container">
+              <p class="VideoInfo__stats">28,535 views • Jun 26, 2020</p>
+              <div class="VideoInfo__btns">
+                <div class="VideoInfo__thumbs">
+                  <div class="VideoInfo__btn">
+                    <img src="assets/thumb-up.svg" height="25px" />
+                    <p class="VideoInfo__btn-text">915</p>
+                  </div>
+                  <div class="VideoInfo__btn">
+                    <img src="assets/thumb-down.svg" />
+                    <p class="VideoInfo__btn-text">2</p>
+                  </div>
+                  <div class="VideoInfo__thumbs-underline"></div>
                 </div>
-
-                <!--DIVISOR LINE-->
-                <hr class="solid b-line">
-
-                <!--SHARE BUTTONS-->
-                <div class="share-flex d-flex">
-                    <div class="share-flex d-flex">
-                        <div class="share-flex d-flex p-share">
-                            <i class="fas fa-plus"></i>
-                            <p>Add to</p>
-                        </div>
-
-                        <div class="share-flex d-flex p-share">
-                            <i class="fas fa-share"></i>
-                            <p>Share</p>
-                        </div>
-
-                        <div class="share-flex d-flex p-share">
-                            <i class="fas fa-ellipsis-h"></i>
-                            <p>More</p>
-                        </div>
-                    </div>
-
-                    <div class="share-flex d-flex">
-                        <div class="share-flex p-share d-flex">
-                            <i class="fas fa-thumbs-up"></i>
-                            <p>359</p>
-                        </div>
-
-                        <div class="share-flex p-share d-flex">
-                            <i class="fas fa-thumbs-down"></i>
-                            <p>14</p>
-                        </div>
-                    </div>
+                <div class="VideoInfo__btn">
+                  <img src="assets/share.svg" />
+                  <p class="VideoInfo__btn-text">Share</p>
                 </div>
+                <div class="VideoInfo__btn">
+                  <img src="assets/save.svg" />
+                  <p class="VideoInfo__btn-text">Save</p>
+                </div>
+                <div class="VideoInfo__btn">
+                  <img src="assets/more.svg" />
+                </div>
+              </div>
             </div>
-
-            <!--INFORMATION SECTION-->
-            <section class="general-background date-container">
-                <div class=" publish-date">
-                    <h4>Published on Feb 27, 2014</h4>
-
-                    <p>
-                        How do you contribute to open source? In this video, I\'ll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I\'ll
-                        also describe what kinds of contributions open source software projects are typically looking for. As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum
-                        for learning web development with Ruby on Rails. You can find more information about that project at http://theodinproject.com.
-                    </p>
+          </div>
+          <div class="Divider"></div>
+          <div class="VideoDescription">
+            <div class="VideoDescription__container">
+              <div class="VideoDescription__avatar-container">
+                <div class="VideoDescription__avatar">
+                  <img src="assets/sons-avatar.jpg" />
                 </div>
-                <hr class="solid">
+                <div class="VideoDescription__title-container">
+                  <h2 class="VideoDescription__title">Sons Of The East</h2>
+                  <p class="VideoDescription__subscribers">68K subscribers</p>
+                </div>
+              </div>
+              <button class="SubscribeBtn">Subscribe</button>
+            </div>
+            <p class="VideoDescription__text">
+              "The Lime Cordiale guys are good mates of ours so we thought it
+              would be fun to cover one
+            </p>
+            <p class="VideoDescription__show-more">Show More</p>
+          </div>
+          <div class="Divider"></div>
+        </article>
+        <section class="Comments">
+          <div class="Comments__stats-container">
+            <div class="Comments__count">68 comments</div>
+            <div class="VideoInfo__btn">
+              <img src="assets/sort.svg" />
+              <p class="VideoInfo__btn-text">Sort by</p>
+            </div>
+          </div>
+          <div class="Comments__form-container">
+            <div class="Comments__avatar">
+              <img src="./assets/timkelly.jpg" />
+            </div>
+            <form class="Comments__form">
+              <input
+                type="text"
+                placeholder="Add a public comment..."
+                class="Comments__form-input"
+              />
+            </form>
+          </div>
 
-                <a href="#">
-                    <p class="center-text yt-gray">
-                        SHOW MORE
-                    </p>
-                </a>
-            </section>
-
+          <div class="Comment">
+            <div class="Comments__avatar">
+              <img src="./assets/comment-avatar.jpg" />
+            </div>
+            <div class="Comment__data">
+              <div class="Comment__name-container">
+                <p class="Comment__name">David Cleworth</p>
+                <p class="Comment__date">3 months ago</p>
+              </div>
+              <div class="Comment__info">
+                <p>The Sons never disappoint!</p>
+              </div>
+              <div class="CommentReactions">
+                <div class="CommentReactions__btn CommentReactions__btn--vote">
+                  <img src="assets/thumb-up.svg" height="18px" />
+                  <p class="CommentReactions__btn CommentReactions__vote-count">
+                    8
+                  </p>
+                </div>
+                <div class="CommentReactions__btn CommentReactions__btn--vote">
+                  <img src="assets/thumb-down.svg" height="18px" />
+                </div>
+                <p class="CommentReactions__btn CommentReactions__btn--reply">
+                  Reply
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="Comment">
+            <div class="Comments__avatar">
+              <img src="./assets/comment-avatar.jpg" />
+            </div>
+            <div class="Comment__data">
+              <div class="Comment__name-container">
+                <p class="Comment__name">David Cleworth</p>
+                <p class="Comment__date">3 months ago</p>
+              </div>
+              <div class="Comment__info">
+                <p>
+                  The Sons never disappoint! 🎶 The Sons never disappoint! 🎶The
+                  Sons never disappoint! 🎶The Sons never disappoint! 🎶The Sons
+                  never disappoint! 🎶
+                </p>
+              </div>
+              <div class="CommentReactions">
+                <div class="CommentReactions__btn CommentReactions__btn--vote">
+                  <img src="assets/thumb-up.svg" height="18px" />
+                  <p class="CommentReactions__btn CommentReactions__vote-count">
+                    8
+                  </p>
+                </div>
+                <div class="CommentReactions__btn CommentReactions__btn--vote">
+                  <img src="assets/thumb-down.svg" height="18px" />
+                </div>
+                <p class="CommentReactions__btn CommentReactions__btn--reply">
+                  Reply
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    <br><br><br>
             <!--COMMENTS-->
             <div class="general-background d-flex loading-gif">
                 <img src="images/loading-img" alt="Loading logo ">
