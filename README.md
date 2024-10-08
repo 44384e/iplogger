@@ -24,7 +24,7 @@ https://seudominio.com/7xqKWj2di/index.php
 
 A página simula uma interface de visualização de vídeo do YouTube:
 
-![Simulação da Página do YouTube](https://raw.githubusercontent.com/them3x/iplogger/main/prints/pagina-youtube.png)
+![Simulação da Página do YouTube](./prints/pagina-youtube.png)
 
 #### 📊 Informações Capturadas
 - **Básico:** IP, User-Agent e resolução de tela.
